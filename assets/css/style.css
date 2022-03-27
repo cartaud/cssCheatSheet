@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(46, 45, 45);
+}
+
+h1,
+.boxDescription
+ {
+    color: rgba(255, 51, 211, 1);
+}
+
+p {
+    margin-bottom: 50px; 
+    color: white;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    border: dotted white 2px;
+    margin: 15px 10px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.boxTitle {
+    border: solid white 2px;
+    padding-left: 10px;
+    position: relative;
+    margin-top: -20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    background-color: rgb(46, 45, 45);
+}
+
+.boxDescription {
+    margin: 10px;
+    flex: 1;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+.codeContainer {
+    color: white;
+    flex: 5;
+    
+}
+
+pre {
+    background: linear-gradient(170deg,rgba(245, 33, 217, 0.103),rgb(241, 111, 213),rgb(255, 51, 211));
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top:-8px;
+    height: 100%;
+    display: flex;
+    align-items: center
+}
+
+.box .boxTitle {
+    border-radius: 8px; 
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover,
+.box:hover .boxTitle {
+    box-shadow: inset 0px 0px 8px rgba(232,
+102, 236, 1), 0 0 15px rgba(232, 102, 236,
+1);
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .box {
+      width: 50%;
+    }
+  }
+
+@media screen and (max-width:768px) {
+    .box {
+        width: 100%;
+    }
+}
